@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Background space gradient -->
+    <radialGradient id="spaceBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#05070d" />
+    </radialGradient>
+
+    <!-- Lunar surface 3D lighting gradient -->
+    <radialGradient id="moonSurface" cx="35%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="35%" stop-color="#e2e8f0" />
+      <stop offset="68%" stop-color="#94a3b8" />
+      <stop offset="88%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </radialGradient>
+
+    <!-- Outer celestial atmospheric glow -->
+    <filter id="lunarGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark circular backing for ultra-clear visibility on light and dark browser tabs -->
+  <circle cx="32" cy="32" r="31" fill="url(#spaceBg)" />
+
+  <!-- Outer cyan atmosphere halo ring -->
+  <circle cx="32" cy="32" r="27.5" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5" filter="url(#lunarGlow)" />
+
+  <!-- Moon sphere body with spherical light shading -->
+  <circle cx="32" cy="32" r="25" fill="url(#moonSurface)" />
+
+  <!-- Major Lunar Maria (dark volcanic basalt basins) -->
+  <!-- Mare Imbrium -->
+  <path d="M22 20 Q28 17 33 22 Q30 28 24 27 Z" fill="#334155" fill-opacity="0.45" />
+  
+  <!-- Mare Serenitatis & Mare Tranquillitatis -->
+  <ellipse cx="38" cy="25" rx="5" ry="4.5" fill="#334155" fill-opacity="0.42" />
+  <ellipse cx="40" cy="33" rx="5.5" ry="4" fill="#334155" fill-opacity="0.48" />
+
+  <!-- Oceanus Procellarum edge -->
+  <path d="M14 26 Q19 23 20 34 Q15 38 13 32 Z" fill="#334155" fill-opacity="0.4" />
+
+  <!-- Mare Crisium (isolated eastern mare) -->
+  <ellipse cx="48" cy="27" rx="2.8" ry="3.8" fill="#1e293b" fill-opacity="0.5" />
+
+  <!-- Impact craters with shadow and bright ejecta highlights -->
+  <!-- Tycho crater (south) with bright central peak -->
+  <circle cx="33" cy="46" r="3.2" fill="#1e293b" fill-opacity="0.75" />
+  <circle cx="33" cy="46" r="1.1" fill="#f8fafc" />
+  <path d="M33 42.8 L33 40 M36 44 L39 43 M35 48 L38 51 M30 48 L27 51 M29 44 L26 43" stroke="#cbd5e1" stroke-width="0.7" stroke-opacity="0.6" stroke-linecap="round" />
+
+  <!-- Copernicus Crater (center-left) -->
+  <circle cx="25" cy="32" r="2.4" fill="#1e293b" fill-opacity="0.65" />
+  <circle cx="24.6" cy="31.6" r="0.8" fill="#ffffff" />
+
+  <!-- Kepler Crater -->
+  <circle cx="18" cy="31" r="1.5" fill="#1e293b" fill-opacity="0.6" />
+  <circle cx="17.7" cy="30.7" r="0.5" fill="#f8fafc" />
+
+  <!-- Aristarchus high albedo bright spot -->
+  <circle cx="18" cy="23" r="1.2" fill="#ffffff" />
+
+  <!-- Acquired beacon indicator point (Cyan dot with radio pulse) -->
+  <circle cx="40" cy="33" r="1.8" fill="#22d3ee" />
+  <circle cx="40" cy="33" r="3.4" fill="none" stroke="#22d3ee" stroke-width="0.8" stroke-opacity="0.7" />
+</svg>
