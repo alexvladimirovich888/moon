@@ -1,0 +1,6 @@
+{
+  "name": "MOON COIN — Interactive 3D Lunar Territory Explorer",
+  "description": "Explore and acquire lunar territory funded by $MOON token volume on Pump.fun. Interactive 3D Moon sector explorer with real-time land registration through Moon Register.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
