@@ -2,7 +2,7 @@ import { LunarSector, ProjectStats } from '../types/sector';
 
 // Centralized Token & Project Configuration
 // Can be customized with any live Pump.fun contract address
-export const TOKEN_CA = 'HCy7vxTApN2Lcv6Rw1MZazXsEofXFLxWCVbJBhF8pump';
+export const TOKEN_CA = '5KNTD5tV9uKzx3x47g2jDsNcUusCCxpDFjgQeBdLpump';
 
 export const PROJECT_CONFIG: ProjectStats = {
   tokenCa: TOKEN_CA,
